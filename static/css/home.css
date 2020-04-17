@@ -80,6 +80,16 @@ mark {
 	height: 220px;
 	padding: 20px;
 	display: inline-block;
+
+}
+
+.media:hover {
+	-webkit-box-shadow: 15px 16px 17px -1px rgba(94, 94, 94, 0.45);
+	-moz-box-shadow: 15px 16px 17px -1px rgba(94, 94, 94, 0.45);
+	box-shadow: 15px 16px 17px -1px rgba(94, 94, 94, 0.45);
+	transform: translateY(-15px);
+	-webkit-transform: translateY(-10px);
+	transition: 0.3s ease-out;
 }
 
 .padder {
