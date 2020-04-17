@@ -47,6 +47,7 @@ mark {
 
 #none {
 	border: none;
+	outline: none;
 	background-color: white;
 }
 
