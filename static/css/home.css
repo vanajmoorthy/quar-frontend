@@ -1,0 +1,89 @@
+body {
+    font-family: "FuturaMedium";
+    overflow-x: hidden;
+}
+
+.annie {
+    position: absolute;
+    top: 200px;
+    left: 0;
+    height: 60%;
+    opacity: 1;
+}
+
+#down-button:active {
+	outline: none;
+	border: none;
+}
+
+#down-button:focus {
+	outline: 0;
+}
+
+.active {
+	border-bottom: 4px solid #17a2b8;
+	line-height: 15px;
+}
+
+mark {
+	background-color: #17a2b8;
+	color: white;
+}
+
+.increase-line-height {
+	line-height: 50px;
+}
+
+.container {
+	/* position: relative; */
+}
+
+.jumbotron {
+	height: 88vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+#none {
+	border: none;
+	background-color: white;
+}
+
+.footer-links {
+	color: white;
+	text-decoration: underline;
+}
+
+.footer-links:hover {
+	color: white;
+	opacity: 0.5;
+	transition: 0.3s ease;
+}
+
+.boldify {
+	font-family: "FuturaBold";
+	text-decoration: underline;
+}
+
+.list-container {
+	margin-bottom: 50px;
+	margin-top: 50px;
+}
+
+.media {
+	-webkit-box-shadow: 15px 16px 17px -1px rgba(153, 153, 153, 0.37);
+	-moz-box-shadow: 15px 16px 17px -1px rgba(153, 153, 153, 0.37);
+	box-shadow: 15px 16px 17px -1px rgba(153, 153, 153, 0.37);
+
+	border-radius: 8px;
+	height: 220px;
+	padding: 20px;
+	display: inline-block;
+}
+
+.padder {
+	display: table-cell;
+	vertical-align: middle;
+	text-align: center;
+}

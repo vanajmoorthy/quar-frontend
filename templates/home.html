@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Quar.in</title>
+  <!-- Bootstrap -->
+  <link href="../static/css/bootstrap-4.4.1.css" rel="stylesheet">
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+  <script src="../static/js/jquery-3.4.1.min.js"></script>
+  <!-- Include all compiled plugins (below), or include individual files as needed -->
+  <script src="../static/js/popper.min.js"></script>
+  <script src="../static/js/bootstrap-4.4.1.js"></script>
+
+  <link rel="stylesheet" href="../static/css/home.css">
+  <link rel="stylesheet" href="../static/admin/css/fonts.css">
+  <script src="../static/js/custom.js"></script>
+
+</head>
+
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-light p-4">
+    <a class="navbar-brand active" href="{{home}}">Quar.in</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="internships">Find Internships</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="about">About</a>
+        </li>
+      </ul>
+      <div><a href="login" class="btn btn-outline-info my-2 my-sm-0">Company Log In</a></div>
+    </div>
+  </nav>
+
+  <section>
+    <div class="jumbotron text-center mt-2 bg-white">
+      <!-- <img class="annie" src="../static/images/annie-spratt-QckxruozjRg-unsplash.jpg"> -->
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <h1 class="p-2 boldify">Quar.in</h1>
+            <h3 class="p-2 increase-line-height">Don’t just Quarantine, <mark>Quarintern!</mark></h3>
+            <p class="pb-4">Work from home Internships for high school and college students.</p>
+            <p><a class="btn btn-info btn-lg" href="internships" role="button">Find The Right Internship For You</a>
+            </p>
+            <button onclick="doScroll()" id="none">
+              <img id="down-button" class="pt-3" src="https://img.icons8.com/android/24/000000/expand-arrow.png" />
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <div class="list-container">
+
+    <hr>
+    <br>
+
+    <section>
+      <div class="container mt-2">
+        <div class="row">
+          <div class="col-md-4 col-12">
+            <ul id="image-list" class="list-unstyled">
+              <div class="padder">
+                <li class="media">
+                  <img class="mr-3 pb-2" src="../static/images/home/ApplyPlane.png" alt="Generic placeholder image">
+                  <div class="media-body">
+                    <h5 class="mt-0 mb-1 boldify">Apply</h5>
+                    There is a desire of hardworking students to contribute and engage themselves in constructive work,
+                    though remotely.
+                  </div>
+                </li>
+              </div>
+            </ul>
+          </div>
+          <div class="col-md-4 col-12">
+            <ul class="list-unstyled">
+              <div class="padder">
+                <li class="media">
+                  <img class="mr-3 pb-2" src="../static/images/home/PostGear.png" alt="Generic placeholder image">
+                  <div class="media-body">
+                    <h5 class="mt-0 mb-1 boldify">Post an internship</h5>
+                    Many businesses are facing huge losses, and are unable to afford a contribution of thought,
+                    creativity
+                    and support, that may help them in the long run.
+                  </div>
+                </li>
+              </div>
+            </ul>
+          </div>
+          <div class="col-md-4 col-12">
+            <ul class="list-unstyled">
+              <div class="padder">
+                <li class="media">
+                  <img class="mr-3 pb-2" src="../static/images/home/LogInentry.png" alt="Generic placeholder image">
+                  <div class="media-body">
+                    <h5 class="mt-0 mb-1 boldify">Company-driven</h5>
+                    Quar.in aims to bridge the gap between need for creative and capable minds by companies, and
+                    motivated
+                    college and high school students.
+                  </div>
+                </li>
+              </div>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container mt-2">
+        <div class="row">
+          <div class="col-md-4 col-12">
+            <ul class="list-unstyled">
+              <div class="padder">
+                <li class="media">
+                  <img class="mr-3 pb-2" src="../static/images/home/TrackPaw.png" alt="Generic placeholder image">
+                  <div class="media-body">
+                    <h5 class="mt-0 mb-1 boldify">Track Internship Status</h5>
+                    Check if your internship application has been accepted! Use your unique intern ID to view your
+                    application status.
+                  </div>
+                </li>
+              </div>
+            </ul>
+          </div>
+          <div class="col-md-4 col-12">
+            <ul class="list-unstyled">
+              <div class="padder">
+                <li class="media">
+                  <img class="mr-3 pb-2" src="../static/images/home/contact.png" alt="Generic placeholder image">
+                  <div class="media-body">
+                    <h5 class="mt-0 mb-1 boldify">Contact Us</h5>
+                    Reach out to us for any queries or for feedback. We would love to hear from you and hope to improve
+                    your
+                    experience with Quar.in.
+                  </div>
+                </li>
+              </div>
+            </ul>
+          </div>
+          <div class="col-md-4 col-12">
+            <ul class="list-unstyled">
+              <div class="padder">
+                <li class="media">
+                  <img class="mr-3 pb-2" src="../static/images/home/AboutPeople.png" alt="Generic placeholder image">
+                  <div class="media-body">
+                    <h5 class="mt-0 mb-1 boldify">About Us</h5>
+                    Learn more about out the motivation behind Quar.in and learn more about out team. Do you have a
+                    question, here are some frequently asked questions.
+                  </div>
+                </li>
+              </div>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <br>
+    <hr>
+
+  </div>
+
+  <footer class="text-white bg-info p-4">
+    <div class="row">
+      <div class="col-6 col-md-8 col-lg-7">
+        <div class="row text-center">
+          <div class="col-sm-6 col-md-4 col-lg-4 col-12">
+            <ul class="list-unstyled">
+              <li class="btn-link"> <a href="internships" class="footer-links">Find Internship</a> </li>
+            </ul>
+          </div>
+          <div class="col-sm-6 col-md-4 col-lg-4 col-12">
+            <ul class="list-unstyled">
+              <li class="btn-link"> <a href="about" class="footer-links">About Us / FAQ </a></li>
+            </ul>
+          </div>
+          <div class="col-lg-4 col-12">
+            <ul class="list-unstyled">
+              <li class="btn-link"><a href="login" class="footer-links">Company Log In</a></li>
+
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 col-lg-5 col-6">
+        <address>
+          <abbr title="Phone">P:</abbr> (+91) 704906447 or 8130920931 <br>
+          <abbr title="Phone">@:</abbr>&nbsp;quarindia@gmail.com
+          <a href="mailto:#"></a>
+        </address>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>

@@ -1,0 +1,115 @@
+{%  load static  %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Quar.in | Find Internships</title>
+    <!-- Bootstrap -->
+    <link href="{% static 'css/bootstrap-4.4.1.css' %}" rel="stylesheet">
+  </head>
+  <body>
+	  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <a class="navbar-brand" href="#">Quar.in</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+			  <a class="nav-link" href="post">Post Internships</a> </li>
+		  <li class="nav-item">
+            <a class="nav-link" href="">Track Applications</a> </li>
+			<li class="nav-item">
+            <a class="nav-link" href="#">View my Internships</a> </li>
+			<li class="nav-item">
+            <a class="nav-link" href="#">Edit Profile</a> </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+<a class="btn btn-outline-danger" href="logout">Log Out</a>
+        </form>
+      </div>
+    </nav>
+<br><br><br><br>
+    <h2 class="text-center">HI {{request.user.name}}, WELCOME TO YOUR DASHBOARD.</h2><br>
+<div class="container">
+  <table class="table table-hover justify-content-center">
+  <thead>
+    <tr>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td align="center"><h1><a href="../post"><img src="{% static 'images/home/PostGear.png' %}" width="32" height="32" alt=""/>&nbsp;&nbsp;Post an Internship&nbsp;&nbsp;</a></h1>
+		  <p>Get the brightest minds from top institutes around the world to help your organization achieve its goals.</p>
+	</td>
+    </tr>
+    <tr>
+      <td align="center"><h1><a href="appliedDashboard"><img src="{% static 'images/home/AboutPeople.png' %}" width="32" height="32" alt=""/>&nbsp;&nbsp;Track Applications&nbsp;&nbsp;</a></h1>
+	<p>View applicants, accept or decline applications for the internships you have posted easily through your inbox.</p>
+</td>
+    </tr>
+    <tr>
+		<td align="center"><h1><a href="#"><img src="{% static 'images/home/TrackPaw.png' %}" width="32" height="32" alt=""/>&nbsp;&nbsp;View Past Internships&nbsp;&nbsp;</a></h1>
+<p>View or make changes to internships you have posted earlier through our platform.</p>
+</td>
+    </tr>
+	  <tr>
+		<td align="center"><h1><a href="#"><img src="{% static 'images/home/LogInentry.png' %}" width="32" height="32" alt=""/>&nbsp;&nbsp;Edit your profile&nbsp;&nbsp;</a></h1>
+		  <p>Edit or update  your company information.</p></td>
+    </tr>
+  </tbody>
+</table>
+	<br><br>
+</div>
+	  
+	  <div class="text-white bg-dark p-4">
+      <div class="row">
+        <div class="col-6 col-md-8 col-lg-7">
+          <div class="row text-center">
+            <div class="col-sm-6 col-md-4 col-lg-4 col-12">
+              <ul class="list-unstyled">
+                <li class="btn-link"> <a>Find Internship</a> </li>
+                <li class="btn-link"><a>&nbsp;Post Internship</a> </li>
+              </ul>
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-4 col-12">
+              <ul class="list-unstyled">
+                <li class="btn-link"> <a>Track Internship</a> </li>
+                <li class="btn-link"><a>&nbsp;Log In</a></li>
+              </ul>
+            </div>
+            <div class="col-lg-4 col-12">
+              <ul class="list-unstyled">
+                <li class="btn-link"> <a>Contact Us&nbsp;&nbsp;</a> </li>
+			    <li class="btn-link"> <a>&nbsp;About&nbsp; Us / FAQ </a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 col-lg-5 col-6">
+          <address>
+            <abbr title="Phone">P:</abbr> (+91) 704906447 or 8130920931&nbsp; &nbsp; &nbsp;&nbsp; <br>
+			  <abbr title="Phone">@:</abbr>&nbsp;quarindia@gmail.com
+            <a href="mailto:#">&nbsp;</a>
+          </address>
+        </div>
+      </div>
+    </div>
+    <footer class="text-center">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            Quar.in&nbsp;&nbsp;
+          </div>
+        </div>
+      </div>
+    </footer>
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap-4.4.1.js"></script>
+  </body>
+</html>

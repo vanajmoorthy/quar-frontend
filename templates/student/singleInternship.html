@@ -1,0 +1,159 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Quar.in | {{post.title}} </title>
+    <!-- Bootstrap -->
+    <link href="{% static '/css/bootstrap-4.4.1.css' %} " rel="stylesheet">
+      <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="{% static '/js/jquery-3.4.1.min.js' %}"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="{% static '/js/popper.min.js' %}"></script>
+    <script src="{% static '/js/bootstrap-4.4.1.js' %}"></script>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <a class="navbar-brand" href="{{home}}">Quar.in</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+			  <a class="nav-link" href="internships">Find Internships</a> </li>
+		  <li class="nav-item">
+            <a class="nav-link" href="about">About</a> </li>
+        </ul>
+		<div><a href="login" class="btn btn-outline-success my-2 my-sm-0">Company Log In</a></div>
+      </div>
+    </nav>
+  <div class="container">
+      <hr>
+      <div class="row">
+        <div class="col-6">
+          <h1>{{post.title}}</h1>
+        </div>
+        <div class="col-6">
+          <p class="text-right"><a href="../apply/{{post.id}}">Apply</a></p>
+        </div>
+      </div>
+      <hr>
+      <div class="row">
+        <div class="col-md-8 col-sm-12">
+          <div class="media">
+            <img class="mr-3" src="{{post.company.companyLogo}}" alt="Generic placeholder image" width="115" height="115">
+            <div class="media-body">
+              <h5 class="mt-0">{{post.company}}</h5>
+             {{post.description}}
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-12">
+          <div class="row justify-content-md-around m-1">
+            <address>
+              <strong>Contact details:</strong><br>
+              
+              
+              <abbr title="Phone">P:</abbr> {{post.company.phone}}<br>
+              <a href="mailto:#">{{post.company.email}}</a>
+            </address>
+          </div>
+        </div>
+      </div>
+      <hr>
+      <div class="row">
+        <div class="col-md-6 col-sm-12">
+          <h2>Details</h2>
+          <hr>
+          <div class="row">
+            <div class="col-6">
+              <h4>Start Date</h4>
+            </div>
+            <div class="col-6">
+              <h6 class="text-right"><span aria-hidden="true"></span>{{post.startDate}}</h6>
+            </div>
+          </div>
+<div class="row">
+        <div class="col-6">
+              <h4>Duration</h4>
+            </div>
+            <div class="col-6">
+              <h6 class="text-right"><span aria-hidden="true"></span> {{post.duration}}</h6>
+            </div>
+          </div>
+			<div class="row">
+            <div class="col-6">
+              <h4>Location</h4>
+            </div>
+            <div class="col-6">
+              <h6 class="text-right"><span aria-hidden="true"></span>{{post.location}}</h6>
+            </div>
+          </div>
+</div>
+</div>
+      <hr>
+      <div class="row">
+        <div class="col-md-6 col-sm-12">
+          <div class="row">
+            <div class="col-5">
+              <h4>Description</h4>
+            </div>
+</div>
+<p>{{post.description}}</p>
+        </div>
+        <div class="col-md-6 col-sm-12">
+          <div class="row">
+            <div class="col-5">
+              <h4>Requirements</h4>
+            </div>
+</div>
+          <h5><span class="badge badge-secondary">Education Level</span></h5>
+          <p>{{post.requirements}}</p>
+        </div>
+      </div>
+<hr>
+</div>
+	  <hr>
+    <div class="text-white bg-dark p-4">
+      <div class="row">
+        <div class="col-6 col-md-8 col-lg-7">
+          <div class="row text-center">
+            <div class="col-sm-6 col-md-4 col-lg-4 col-12">
+              <ul class="list-unstyled">
+                <li class="btn-link"> <a href="internships">Find Internship</a> </li>
+              </ul>
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-4 col-12">
+              <ul class="list-unstyled">
+			    <li class="btn-link"> <a href="about">&nbsp;About&nbsp; Us / FAQ </a></li>
+              </ul>
+            </div>
+            <div class="col-lg-4 col-12">
+              <ul class="list-unstyled">
+                <li class="btn-link"><a href="login">&nbsp;Company Log In</a></li>
+
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 col-lg-5 col-6">
+          <address>
+            <abbr title="Phone">P:</abbr> (+91) 704906447 or 8130920931&nbsp; &nbsp; &nbsp;&nbsp; <br>
+			  <abbr title="mailto:#">@:</abbr>&nbsp;quarindia@gmail.com
+          </address>
+        </div>
+      </div>
+    </div>
+    <footer class="text-center">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            Quar.in&nbsp;&nbsp;
+          </div>
+        </div>
+      </div>
+    </footer>
+</html>

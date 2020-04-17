@@ -1,0 +1,41 @@
+/* @font-face {
+    font-family: 'AndersonBold';
+    src: url('../fonts/AndersonGrotesk-Bold.otf');
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'AndersonMedium';
+    src: url('../fonts/AndersonGrotesk.otf');
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'AndersonLight';
+    src: url('../fonts/AndersonGrotesk-Light.otf');
+    font-style: normal;
+} */
+
+@font-face {
+    font-family: 'FuturaBold';
+    src: url('../fonts/FuturaBold.ttf');
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'FuturaMedium';
+    src: url('../fonts/FuturaMedium.ttf');
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'FuturaLight';
+    src: url('../fonts/FuturaLight.ttf');
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'FuturaBook';
+    src: url('../fonts/FuturaBook.ttf');
+    font-style: normal;
+}
