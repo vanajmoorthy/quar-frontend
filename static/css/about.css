@@ -1,0 +1,40 @@
+body {
+	font-family: "FuturaMedium";
+	overflow-x: hidden;
+	height: 100vh;
+}
+
+.bold {
+    font-family: "FuturaBold";
+}
+
+.active {
+	border-bottom: 4px solid #17a2b8;
+	/* line-height: 15px; */
+}
+
+.footer-links {
+	color: white;
+	text-decoration: underline;
+}
+
+.underline {
+	text-decoration: underline;
+}
+
+a {
+	color: #17a2b8;
+}
+
+ul {
+    padding-left: 15px;
+}
+
+.img-thumbnail {
+    border: none;
+    border-radius: 25px;
+}
+
+.margin-center {
+    margin: auto;
+}

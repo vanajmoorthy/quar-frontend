@@ -1,147 +1,153 @@
-{% load static %}
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Quar.in | About</title>
-    <!-- Bootstrap -->
-    <link href="{% static 'css/bootstrap-4.4.1.css' %} " rel="stylesheet">
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="{% static '/js/jquery-3.4.1.min.js' %}"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="{% static '/js/popper.min.js' %}"></script>
-    <script src="{% static '/js/bootstrap-4.4.1.js' %}"></script>
-  </head>
-  <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-      <a class="navbar-brand" href="{{home}}">Quar.in</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav mr-auto">
-          <li class="nav-item">
-			  <a class="nav-link" href="internships">Find Internships</a> </li>
-		  <li class="nav-item">
-            <a class="nav-link" href="about">About</a> </li>
-        </ul>
-		<div><a href="login" class="btn btn-outline-success my-2 my-sm-0">Company Log In</a></div>
-      </div>
-    </nav>
-  <div class="container">
-      <hr>
-<div align="center"> </div>
 
-      <h2>Our goal&nbsp;</h2>
-      <hr>
-    <div class="row">
-        <div class="col-md-6 col-sm-12">
-          <div class="row">
-            <div class="col-5">
-              <h4>Students&nbsp;</h4>
-            </div>
-            <div class="col-6">
-            </div>
-          </div>
-<p>We aim to smoothen the entire process for securing an internship for students in India. From starting your application till your first day at work, Quar.in helps bridge the gaps in three stages:</p>
-          <ul>
-            <li>Apply for internships</li>
-            <li>Track their internship</li>
-            <li>Accept their internship</li>
-          </ul>
-        </div>
-        <div class="col-md-6 col-sm-12">
-          <div class="row">
-            <div class="col-5">
-              <h4>Companies</h4>
-            </div>
-            <div class="col-6">
-            
-            </div>
-          </div>
-<p>It can often be tough to reach out to aspiring applicants or perhaps have a aggregated database of potnetial interns to review systematically. Quar.in helps streamline this process providinng support in three simple steps:</p>
-          <ul>
-            <li class="list-">Post their internships</li>
-            <li>Review their applicants</li>
-            <li>Send out acceptances</li>
-          </ul>
-        </div>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Quar.in | About</title>
+  <!-- Bootstrap -->
+  <link href="../static/css/bootstrap-4.4.1.css" rel="stylesheet">
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+  <script src="../static/js/jquery-3.4.1.min.js"></script>
+  <!-- Include all compiled plugins (below), or include individual files as needed -->
+  <script src="../static/js/popper.min.js"></script>
+  <script src="../static/js/bootstrap-4.4.1.js"></script>
+
+  <link rel="stylesheet" href="../static/css/about.css">
+  <link rel="stylesheet" href="../static/admin/css/fonts.css">
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light p-4">
+    <a class="navbar-brand" href="{{home}}">Quar.in</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="internships">Find Internships</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" href="about">About</a>
+        </li>
+      </ul>
+      <div><a href="login" class="btn btn-outline-info my-2 my-sm-0">Company Log In</a></div>
     </div>
-      <hr>
-      <h2>About the founders</h2>
-      <hr>
+  </nav>
+  <div class="container">
+
+
+    <h2 class="mt-5 mb-5 bold h2-size underline">Our goal</h2>
+
     <div class="row">
-      <div class="col-md-6 col-sm-12 col-xl-4"><strong></strong>
+      <div class="col-md-6 col-sm-12">
+        <div class="row">
+          <div class="col-5">
+            <h4 class="underline">Students</h4>
+          </div>
+          <div class="col-6">
+          </div>
+        </div>
+        <p>We aim to smoothen the entire process for securing an internship for students in India. From starting your
+          application till your first day at work, Quar.in helps bridge the gaps in three stages:</p>
+        <ul>
+          <li>Apply for internships</li>
+          <li>Track their internship</li>
+          <li>Accept their internship</li>
+        </ul>
+      </div>
+      <div class="col-md-6 col-sm-12">
+        <div class="row">
+          <div class="col-5">
+            <h4 class="underline">Companies</h4>
+          </div>
+          <div class="col-6">
+
+          </div>
+        </div>
+        <p>It can often be tough to reach out to aspiring applicants or perhaps have a aggregated database of potnetial
+          interns to review systematically. Quar.in helps streamline this process providinng support in three simple
+          steps:</p>
+        <ul>
+          <li class="list-">Post their internships</li>
+          <li>Review their applicants</li>
+          <li>Send out acceptances</li>
+        </ul>
+      </div>
+    </div>
+
+    <h2 class="mt-5 mb-5 bold underline">About the founders</h2>
+
+    <div class="margin-center">
+
+      <div class="row mb-3">
+        <div class="col-md-6 col-sm-12 col-xl-4"><strong></strong>
           <div class="row">
             <div class="col-5 col-xl-5">
               <h4>Kushagra Vashishta</h4>
             </div>
           </div>
-<p style="padding: 0.5em">Kushagra is an Economic Consulting major at the Kelley School of Business. He believes that organisations have started putting more emphasis on inputs from and training of younger employees.</p>
+          <p>Kushagra is an Economic Consulting major at the Kelley School of Business. He believes
+            that organisations have started putting more emphasis on inputs from and training of younger employees.</p>
         </div>
-      <div class="col-md-6 col-sm-12 col-xl-2"><img class="img-thumbnail" src="{% static 'images/about/KushagraPic.jpg' %} " align width="150" height="150" alt=""/>
+        <div class="col-md-6 col-sm-12 col-xl-2"><img class="img-thumbnail" src="../static/images/about/KushagraPic.jpg"
+            width="150" height="150" alt="" />
         </div>
-      <div class="col-md-6 col-sm-12 col-xl-4">&nbsp;</div>
-      <div class="col-md-6 col-sm-12 col-xl-5">&nbsp;</div>
-      <div class="col-md-6 col-sm-12 offset-xl-1 col-xl-4">
-          <div class="row">
-            <div class="col-5 col-xl-6">
+      </div>
+
+      <div class="row mb-3">
+        <div class="col-md-6 col-sm-12 col-xl-4"><strong></strong>
+          <div class="row ">
+            <div class="col-5 col-xl-5">
               <h4>Nitish Sahni</h4>
             </div>
           </div>
-        <p style="padding: 0.5em">Nitish is Electrical Engineering and Computer Science student at UC Berkeley. He feels that technoloy can serve  to build connectivity between aspiring students and companies, helping both grow in the process.
+          <p>Nitish is Electrical Engineering and Computer Science student at UC Berkeley. He feels that technoloy can
+            serve to build connectivity between aspiring students and companies, helping both grow in the process.</p>
+        </div>
+        <div class="col-md-6 col-sm-12 col-xl-2"><img class="img-thumbnail"
+            src="../static/images/about/poppy-formal-light.png" width="150" height="150" alt="" />
+        </div>
       </div>
-      <div class="col-md-6 col-sm-12 col-xl-2"><strong></strong>
-          <img class="img-thumbnail" src="{% static 'images/about/poppy-formal-light.png' %}" width="150" height="150
-			  " alt=""/>        </div>
-</div>
-				<div class="col-md-6 col-sm-12">
     </div>
-      <br>
-      <br>
-      <div align="center">Get in touch with us at <a href="mailto:#">quarindia@gmail.com</a></div>
-    <hr>
-</div>
-	  <div class="text-white bg-dark p-4">
-      <div class="row">
-        <div class="col-6 col-md-8 col-lg-7">
-          <div class="row text-center">
-            <div class="col-sm-6 col-md-4 col-lg-4 col-12">
-              <ul class="list-unstyled">
-                <li class="btn-link"> <a href="internships">Find Internship</a> </li>
-              </ul>
-            </div>
-            <div class="col-sm-6 col-md-4 col-lg-4 col-12">
-              <ul class="list-unstyled">
-			    <li class="btn-link"> <a href="about">&nbsp;About&nbsp; Us / FAQ </a></li>
-              </ul>
-            </div>
-            <div class="col-lg-4 col-12">
-              <ul class="list-unstyled">
-                <li class="btn-link"><a href="login">&nbsp;Company Log In</a></li>
+  </div>
 
-              </ul>
-            </div>
+  <div align="center" class="mb-4">Get in touch with us at <a href="mailto:#">quarindia@gmail.com</a></div>
+  </div>
+  <footer class="text-white bg-info p-4">
+    <div class="row">
+      <div class="col-6 col-md-8 col-lg-7">
+        <div class="row text-center">
+          <div class="col-sm-6 col-md-4 col-lg-4 col-12">
+            <ul class="list-unstyled">
+              <li class="btn-link"> <a href="internships" class="footer-links">Find Internship</a> </li>
+            </ul>
+          </div>
+          <div class="col-sm-6 col-md-4 col-lg-4 col-12">
+            <ul class="list-unstyled">
+              <li class="btn-link"> <a href="about" class="footer-links">About Us / FAQ </a></li>
+            </ul>
+          </div>
+          <div class="col-lg-4 col-12">
+            <ul class="list-unstyled">
+              <li class="btn-link"><a href="login" class="footer-links">Company Log In</a></li>
+
+            </ul>
           </div>
         </div>
-        <div class="col-md-4 col-lg-5 col-6">
-          <address>
-            <abbr title="Phone">P:</abbr> (+91) 704906447 or 8130920931&nbsp; &nbsp; &nbsp;&nbsp; <br>
-			  <abbr title="Phone">@:</abbr>&nbsp;quarindia@gmail.com
-            <a href="mailto:#">&nbsp;</a>
-          </address>
-        </div>
+      </div>
+      <div class="col-md-4 col-lg-5 col-6">
+        <address>
+          <abbr title="Phone">P:</abbr> (+91) 704906447 or 8130920931 <br>
+          <abbr title="Phone">@:</abbr>&nbsp;quarindia@gmail.com
+          <a href="mailto:#"></a>
+        </address>
       </div>
     </div>
-    <footer class="text-center">
-      <div class="container">
-        <div class="row">
-          <div class="col-12">
-            Quar.in&nbsp;&nbsp;
-          </div>
-        </div>
-      </div>
-    </footer>
+  </footer>
+
+
 </html>

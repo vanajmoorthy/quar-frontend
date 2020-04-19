@@ -1,0 +1,69 @@
+body {
+	font-family: "FuturaMedium";
+	overflow-x: hidden;
+	height: 100vh;
+}
+
+.active {
+	border-bottom: 4px solid #17a2b8;
+	/* line-height: 15px; */
+}
+
+.footer-links {
+	color: white;
+	text-decoration: underline;
+}
+
+.underline {
+	text-decoration: underline;
+}
+
+.page-link {
+	color: #17a2b8;
+}
+
+.table-shadow {
+	-webkit-box-shadow: 15px 16px 17px -1px rgba(153, 153, 153, 0.37);
+	-moz-box-shadow: 15px 16px 17px -1px rgba(153, 153, 153, 0.37);
+	box-shadow: 15px 16px 17px -1px rgba(153, 153, 153, 0.37);
+}
+
+.radius {
+	border-radius: 8px;
+}
+
+.table thead th {
+    border-bottom: none;
+}
+
+mark {
+	background-color: #17a2b8;
+	color: white;
+}
+
+.h2-margins {
+    margin-top: 2rem;
+    margin-bottom: 5rem;
+}
+
+@media only screen and (max-width: 990px) {
+    .h2-margins {
+        margin-bottom: 2rem;
+    }
+
+    .dropdown {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        margin: auto;
+    }
+
+    .butt {
+      margin-bottom: 25px;
+      margin-left: 15px;
+    }
+
+    .dropdown {
+        margin-left: auto;
+    }
+  }

@@ -22,7 +22,7 @@ body {
 
 .active {
 	border-bottom: 4px solid #17a2b8;
-	line-height: 15px;
+	/* line-height: 15px; */
 }
 
 mark {
