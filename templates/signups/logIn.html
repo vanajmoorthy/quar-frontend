@@ -1,123 +1,100 @@
-{% load static %}
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Quar.in | Log In</title>
-    <!-- Bootstrap -->
-    <link href="{% static '/css/bootstrap-4.4.1.css' %} " rel="stylesheet">
-      <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="{% static '/js/jquery-3.4.1.min.js' %}"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="{% static '/js/popper.min.js' %}"></script>
-    <script src="{% static '/js/bootstrap-4.4.1.js' %}"></script>
-  </head>
-  <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-      <a class="navbar-brand" href="{{home}}">Quar.in</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Quar.in | Log In</title>
+  <!-- Bootstrap -->
+  <link href="../../static/css/bootstrap-4.4.1.css" rel="stylesheet">
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+  <script src="../../static/js/jquery-3.4.1.min.js"></script>
+  <!-- Include all compiled plugins (below), or include individual files as needed -->
+  <script src="../../static/js/popper.min.js"></script>
+  <script src="../../static/js/bootstrap-4.4.1.js"></script>
+
+  <link rel="stylesheet" href="../../static/css/about.css">
+  <link rel="stylesheet" href="../../static/admin/css/fonts.css">
+</head>
+
+<body>
+  <<nav class="navbar navbar-expand-lg navbar-light p-4">
+    <a class="navbar-brand" href="#">Quar.in</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav mr-auto">
-          <li class="nav-item">
-			  <a class="nav-link" href="../internships">Find Internships</a> </li>
-		  <li class="nav-item">
-            <a class="nav-link" href="../about">About</a> </li>
-        </ul>
-		<div><a href="../login" class="btn btn-outline-success my-2 my-sm-0">Company Log In</a></div>
-      </div>
-    </nav>
-	  <div class="row"> <br><br>
-</div>
-	  <div class="row">
-    <div class="col-lg-4 col-xl-4">&nbsp;</div>
-    <div class="col-lg-4"><h2>Log In</h2>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="internships.html">Find Internships</a> </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Post Internships</a> </li>
+      </ul>
+      <form class="form-inline my-2 my-lg-0">
+        <a href="logIn.html" class="btn btn-outline-info my-2 my-sm-0" type="submit">Log In</a>
+      </form>
+    </div>
+  </nav>
+
+  <div class="mb-5" style="display: flex; height: 74vh">
+    <div class="p-5" style="margin: auto; -webkit-box-shadow: 15px 16px 17px -1px rgba(153, 153, 153, 0.37);
+    -moz-box-shadow: 15px 16px 17px -1px rgba(153, 153, 153, 0.37);
+    box-shadow: 15px 16px 17px -1px rgba(153, 153, 153, 0.37); border-radius: 8px;">
+      <h2>Log In</h2>
       <br>
-		<form method="post">
-            {% csrf_token %}
-    <label for="exampleInputEmail1">Username</label><br>
-        {{form.username}} <br><br>
-    <label for="exampleInputPassword1">Password</label><br>
-        {{form.password}}<br><br>
-        {% if form.errors %}
-            {{for.errors}}
-         {% endif %}
-    <!--	<div class="form-group">
-<input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="maclewin@supermail.com">
-			</div>
-  <div class="form-group">
-    <label for="exampleInputPassword1">Password</label>
-    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="********"></div>-->
+      <form method="post">
+        <label for="exampleInputEmail1">Username</label><br>
+        <input type="text" class="form-control"> <br><br>
+        <label for="exampleInputPassword1">Password</label><br>
+        <input type="password" class="form-control"><br><br>
 
 
-  <button type="submit" class="btn btn-primary">Log In</button>
-			<small id="logIn" class="form-text text-muted">Don't have an account? <a href="../signup">Sign up your company?</a></small>
-			<br>
-</form>
+        <button type="submit" class="btn btn-info">Log In</button>
+        <small id="logIn" class="form-text text-muted mt-5">Don't have an account? <a href="../signup">Sign up your
+            company?</a></small>
+        <br>
+      </form>
+    </div>
+  </div>
 
+  <footer class="text-white bg-info p-4 mt-5">
+    <div class="row">
+      <div class="col-6 col-md-8 col-lg-7">
+        <div class="row text-center">
+          <div class="col-sm-6 col-md-4 col-lg-4 col-12">
+            <ul class="list-unstyled">
+              <li class="btn-link"> <a href="internships" class="footer-links">Find Internship</a> </li>
+            </ul>
+          </div>
+          <div class="col-sm-6 col-md-4 col-lg-4 col-12">
+            <ul class="list-unstyled">
+              <li class="btn-link"> <a href="about" class="footer-links">About Us / FAQ </a></li>
+            </ul>
+          </div>
+          <div class="col-lg-4 col-12">
+            <ul class="list-unstyled">
+              <li class="btn-link"><a href="login" class="footer-links">Company Log In</a></li>
 
-</div>
-    <div class="col-lg-4 col-xl-5">
-		 
-</div>
-</div>
-<h1>&nbsp;</h1>
-		  <h1>&nbsp;</h1>
-		  <h1>&nbsp;</h1>
-		  <h1>&nbsp;</h1>
-		  <h1>&nbsp;</h1>
-		  <h1>&nbsp;</h1>
-		  <h1>&nbsp;</h1>
-	      <h1>&nbsp;</h1>
-	  <div class="text-white bg-dark p-4">
-      <div class="row">
-        <div class="col-6 col-md-8 col-lg-7">
-          <div class="row text-center">
-            <div class="col-sm-6 col-md-4 col-lg-4 col-12">
-              <ul class="list-unstyled">
-                <li class="btn-link"> <a>Find Internship</a> </li>
-                <li class="btn-link"><a>&nbsp;Post Internship</a> </li>
-              </ul>
-            </div>
-            <div class="col-sm-6 col-md-4 col-lg-4 col-12">
-              <ul class="list-unstyled">
-                <li class="btn-link"> <a>Track Internship</a> </li>
-                <li class="btn-link"><a>&nbsp;Log In</a></li>
-              </ul>
-            </div>
-            <div class="col-lg-4 col-12">
-              <ul class="list-unstyled">
-                <li class="btn-link"> <a>Contact Us&nbsp;&nbsp;</a> </li>
-			    <li class="btn-link"> <a>&nbsp;About&nbsp; Us / FAQ </a></li>
-              </ul>
-            </div>
+            </ul>
           </div>
         </div>
-        <div class="col-md-4 col-lg-5 col-6">
-          <address>
-            <abbr title="Phone">P:</abbr> (+91) 704906447 or 8130920931&nbsp; &nbsp; &nbsp;&nbsp; <br>
-			  <abbr title="Phone">@:</abbr>&nbsp;quarindia@gmail.com
-            <a href="mailto:#">&nbsp;</a>
-          </address>
-        </div>
+      </div>
+      <div class="col-md-4 col-lg-5 col-6">
+        <address>
+          <abbr title="Phone">P:</abbr> (+91) 704906447 or 8130920931 <br>
+          <abbr title="Phone">@:</abbr>&nbsp;quarindia@gmail.com
+          <a href="mailto:#"></a>
+        </address>
       </div>
     </div>
-    <footer class="text-center">
-      <div class="container">
-        <div class="row">
-          <div class="col-12">
-            Quar.in&nbsp;&nbsp;
-          </div>
-        </div>
-      </div>
-    </footer>
-<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="js/jquery-3.4.1.min.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="js/popper.min.js"></script>
-    <script src="js/bootstrap-4.4.1.js"></script>
-  </body>
+  </footer>
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+  <script src="js/jquery-3.4.1.min.js"></script>
+  <!-- Include all compiled plugins (below), or include individual files as needed -->
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap-4.4.1.js"></script>
+</body>
+
 </html>
