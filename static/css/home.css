@@ -20,6 +20,28 @@ body {
 	outline: 0;
 }
 
+.resp {
+	text-align: left;
+}
+
+.mrl-5 {
+	margin-left: 2rem;
+	width: 340px;
+}
+
+@media only screen and (max-width: 1200px) {
+	.resp {
+		text-align: center;
+		margin: auto;
+	}
+
+	.mrl-5 {
+		margin-left: 0rem;
+		margin-top: 2rem;
+		width: 200px;
+	}
+}
+
 .active {
 	border-bottom: 4px solid #17a2b8;
 	/* line-height: 15px; */
@@ -64,7 +86,6 @@ mark {
 
 .boldify {
 	font-family: "FuturaBold";
-	text-decoration: underline;
 }
 
 .list-container {

@@ -1,0 +1,21 @@
+.h2-margins {
+    margin-top: 2rem;
+    margin-bottom: 5rem;
+}
+
+.card {
+    border: none;
+}
+
+.row {
+    -webkit-box-shadow: 15px 16px 17px -1px rgba(153, 153, 153, 0.37);
+	-moz-box-shadow: 15px 16px 17px -1px rgba(153, 153, 153, 0.37);
+	box-shadow: 15px 16px 17px -1px rgba(153, 153, 153, 0.37);
+}
+
+@media only screen and (max-width: 994px) {
+    .card-body {
+        padding: 0
+    }
+}
+
